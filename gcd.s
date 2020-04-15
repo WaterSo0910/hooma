@@ -9,7 +9,7 @@ str3: .string " is "
 main:
         lw       a1, argument1   # Load argument from static data
         lw       a0, argument2
-        jal      ra, gcd       # Jump-and-link to the 'fact' label
+        jal      ra, gcd      	 # Jump-and-link to the 'fact' label
 
         # Print the result to console
         mv       a2, a1
@@ -20,26 +20,29 @@ main:
         li       a0, 10
         ecall
 
-gcd:
+gcd:	# gcd(a1,a2)
         addi     sp, sp, -24
         sw       ra, 16(sp)
-				 sw       a1, 8(sp)
+		# store data
+		sw       a1, 8(sp)
         sw       a0, 0(sp)
+		# if a0>=1 -> call ngcd()
         addi     t0, a0, -1
         bge      t0, zero, ngcd
 
         addi     t0, a1, 0
         addi     sp, sp, 24
         sw       t0, 8(sp)
-        jalr     x0, x1, 0
+        ret
 
 ngcd:
+		# gcd(a0, a1)=> gcd(mod(a1,a0), a0)
         addi     t0, a0, 0
-        remu     a0, a1, a0
-        addi     a1, t0, 0
+        remu     a0, a1, a0 	# a0 = mod(a1, a0) 
+        addi  	 a1, t0, 0		
         jal      ra, gcd
-
-        
+		# gcd做完的a0, a1要load起來
+		# 為了下一次ngcd使用
         lw       a0, 0(sp)
         lw       a1, 8(sp)
         lw       ra, 16(sp)

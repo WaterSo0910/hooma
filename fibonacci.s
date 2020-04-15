@@ -26,13 +26,14 @@ fibo:
         sw       ra, 16(sp)
         sw       a0, 0(sp)
         sw       a1, 8(sp)
+#if 		
         addi     t0, a0, -2
         bge      t0, zero, nfibo
-        
+#if       
         addi     t0, a0, -1
         bge      t0, zero, fibo_1
 
-
+#else
         addi     a1, zero, 0
         sw       a1, 8(sp)
         addi     sp, sp, 24
@@ -47,6 +48,7 @@ fibo_1:
 
 nfibo:
         addi     a0, a0, -1
+		# fibo(a0-1)
         jal      ra, fibo
         sw       a1, 8(sp)
 
@@ -56,6 +58,8 @@ nfibo:
         
         addi     sp, sp, -24
         addi     a0, a0, -2
+		
+		# fibo(a0-2)
         jal      ra, fibo
         addi     sp, sp, 24
         addi     t0, a1, 0
