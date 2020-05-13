@@ -14,15 +14,19 @@ module MUX_2to1(
 			   
 /* Write your code HERE */
 
-	always@(*)begin
+	always@(select_i)begin
 				case(select_i)
-					1'b0 :
+					1'b0 :begin
 						data_o<=data0_i;
-					1'b1 :
+					end
+					1'b1 :begin
 						data_o<=data1_i;	
-					default :
+					end
+					default :begin
 						data_o<=data_o;
+					end
 				endcase
 	end					
+	
 endmodule      
           

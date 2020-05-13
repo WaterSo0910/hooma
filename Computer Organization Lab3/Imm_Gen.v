@@ -23,10 +23,10 @@ module Imm_Gen(
 				Imm_Gen_o[31:0]={{20{instr_i[31]}},instr_i[31:20]};
 			7'b0100011://S_type
 				Imm_Gen_o[31:0]={{20{instr_i[31]}},instr_i[31:25],instr_i[11:7]};
-			7'b0110011://B_type
+			7'b1100011://B_type
 				Imm_Gen_o[31:0]={{21{instr_i[31]}},instr_i[7],instr_i[30:25],instr_i[11:8]};
 			default:
-				Imm_Gen_o=Imm_Gen_o;
+				Imm_Gen_o={32{1'b0}};
 		endcase
 	end
 endmodule

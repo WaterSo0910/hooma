@@ -29,87 +29,87 @@ reg [32:0] temp;
 					overflow=0;
 				end
 				4'b0000: begin//and
-					assign temp=src1&src2;
-					assign result=temp[31:0];
-					assign zero=!result;
-					assign cout=0;
-					assign overflow=0;
+					temp=src1&src2;
+					result=temp[31:0];
+					zero=!result;
+					cout=0;
+					overflow=0;
 				end
 			
 				4'b0001:begin//or
-					assign temp=src1|src2;
-					assign result=temp[31:0];
-					assign zero=!result;
-					assign cout=0;
-					assign overflow=0;
+					temp=src1|src2;
+					result=temp[31:0];
+					zero=!result;
+					cout=0;
+					overflow=0;
 				end
 				4'b0100:begin//xor
-					assign temp=src1^src2;
-					assign result=temp[31:0];
-					assign zero=!result;
-					assign cout=0;
-					assign overflow=0;
+					temp=src1^src2;
+					result=temp[31:0];
+					zero=!result;
+					cout=0;
+					overflow=0;
 				end
 				
 				4'b0010:begin//add
-					assign temp=src1+src2;
-					assign result=temp[31:0];
-					assign zero=!result;
-					assign cout=temp[32];
-					assign overflow=(src1>0&&src2>0&&result<0)||(src1<0&&src2<0&&result>0);
+					temp=src1+src2;
+					result=temp[31:0];
+					zero=!result;
+					cout=temp[32];
+					overflow=(src1>0&&src2>0&&result<0)||(src1<0&&src2<0&&result>0);
 				end
 				
 				4'b0110:begin//sub
-					assign temp=src1-src2;	
-					assign result=temp[31:0];
-					assign zero=!result;
-					assign cout=temp[32];
-					assign overflow=(src1<0&&src2>0&&result>0)||(src1>0&&src2<0&&result<0);
+					temp=src1-src2;	
+					result=temp[31:0];
+					zero=!result;
+					cout=temp[32];
+					overflow=(src1<0&&src2>0&&result>0)||(src1>0&&src2<0&&result<0);
 				end
 				4'b1100:begin//nor
-					assign temp=!src1&!src2;
-					assign result=temp[31:0];
-					assign zero=!result;
-					assign cout=0;
-					assign overflow=0;
+					temp=!src1&!src2;
+					result=temp[31:0];
+					zero=!result;
+					cout=0;
+					overflow=0;
 				end
 				4'b1101:begin//nand
-					assign temp=!src1|!src2;
-					assign result=temp[31:0];
-					assign zero=!result;
-					assign cout=0;
-					assign overflow=0;	
+					temp=!src1|!src2;
+					result=temp[31:0];
+					zero=!result;
+					cout=0;
+					overflow=0;	
 				end
 				4'b0111:begin//slt
 					if(src1>src2)
-						assign result=32'b1;
+						result=32'b1;
 					else
-						assign result={31'b0,1'b1};
-					assign temp=src1-src2;
-					assign result={{31{1'b0}},temp[31]};
-					assign zero=!result;
-					assign cout=0;
-					assign overflow=0;
+						result={31'b0,1'b1};
+					temp=src1-src2;
+					result={{31{1'b0}},temp[31]};
+					zero=!result;
+					cout=0;
+					overflow=0;
 				end
 				4'b0011:begin//sll
-					assign temp=src1 << src2;
-					assign result=temp[31:0];
-					assign zero=!result;
-					assign cout=temp[32];
-					assign overflow=0;
+					temp=src1 << src2;
+					result=temp[31:0];
+					zero=!result;
+					cout=temp[32];
+					overflow=0;
 				end
 				4'b1010:begin//sra
-					assign result=src1 >>> src2;
-					assign zero=!result;
-					assign cout=temp[32];
-					assign overflow=0;
+					result=src1 >>> src2;
+					zero=!result;
+					cout=temp[32];
+					overflow=0;
 				end
 				4'b1111:begin//srli
-					assign temp=src1 >> src2;
-					assign result=temp[31:0];
-					assign zero=!result;
-					assign cout=temp[32];
-					assign overflow=0;
+					temp=src1 >> src2;
+					result=temp[31:0];
+					zero=!result;
+					cout=temp[32];
+					overflow=0;
 				end
 				4'b1000:begin//beq
 					if(src1==src2)begin
@@ -118,18 +118,18 @@ reg [32:0] temp;
 					else begin
 						zero=1'b0;
 					end
-					assign result=temp[31:0];
-					assign cout=temp[32];
-					assign overflow=0;
+					result=temp[31:0];
+					cout=temp[32];
+					overflow=0;
 				end
 				4'b1110:begin//bne
-					if(src1!=src2)
+					if(src1==src2)
 						zero=1'b1;
 					else
 						zero=1'b0;
-					assign result=temp[31:0];
-					assign cout=temp[32];
-					assign overflow=0;
+					result=temp[31:0];
+					cout=temp[32];
+					overflow=0;
 				end
 			endcase
 		end

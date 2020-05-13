@@ -21,19 +21,63 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/chang/Documents/NCTU/2_spring/Conputer Organization/Computer Organization Lab3/Simple_Single_CPU.v";
-static unsigned int ng1[] = {4U, 0U};
+static const char *ng0 = "C:/hooma/Computer Organization Lab3/Simple_Single_CPU.v";
+static const char *ng1 = " pc_i = %3d, zero = %3d, branch = %3d,";
+static unsigned int ng2[] = {4U, 0U};
 
-static void NetReassign_35_1(char *);
 
 
-static void Always_34_0(char *t0)
+static void Cont_35_0(char *t0)
 {
+    char t5[8];
     char *t1;
     char *t2;
     char *t3;
     char *t4;
-    char *t5;
+    unsigned int t6;
+    unsigned int t7;
+    unsigned int t8;
+    char *t9;
+    char *t10;
+    unsigned int t11;
+    unsigned int t12;
+    unsigned int t13;
+    unsigned int t14;
+    unsigned int t15;
+    unsigned int t16;
+    unsigned int t17;
+    char *t18;
+    char *t19;
+    unsigned int t20;
+    unsigned int t21;
+    unsigned int t22;
+    unsigned int t23;
+    unsigned int t24;
+    unsigned int t25;
+    unsigned int t26;
+    unsigned int t27;
+    int t28;
+    int t29;
+    unsigned int t30;
+    unsigned int t31;
+    unsigned int t32;
+    unsigned int t33;
+    unsigned int t34;
+    unsigned int t35;
+    char *t36;
+    char *t37;
+    char *t38;
+    char *t39;
+    char *t40;
+    unsigned int t41;
+    unsigned int t42;
+    char *t43;
+    unsigned int t44;
+    unsigned int t45;
+    char *t46;
+    unsigned int t47;
+    unsigned int t48;
+    char *t49;
 
 LAB0:    t1 = (t0 + 5888U);
     t2 = *((char **)t1);
@@ -42,68 +86,89 @@ LAB0:    t1 = (t0 + 5888U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(34, ng0);
-    t2 = (t0 + 6952);
-    *((int *)t2) = 1;
-    t3 = (t0 + 5920);
-    *((char **)t3) = t2;
-    *((char **)t1) = &&LAB4;
+LAB2:    xsi_set_current_line(35, ng0);
+    t2 = (t0 + 2648U);
+    t3 = *((char **)t2);
+    t2 = (t0 + 3128U);
+    t4 = *((char **)t2);
+    t6 = *((unsigned int *)t3);
+    t7 = *((unsigned int *)t4);
+    t8 = (t6 & t7);
+    *((unsigned int *)t5) = t8;
+    t2 = (t3 + 4);
+    t9 = (t4 + 4);
+    t10 = (t5 + 4);
+    t11 = *((unsigned int *)t2);
+    t12 = *((unsigned int *)t9);
+    t13 = (t11 | t12);
+    *((unsigned int *)t10) = t13;
+    t14 = *((unsigned int *)t10);
+    t15 = (t14 != 0);
+    if (t15 == 1)
+        goto LAB4;
+
+LAB5:
+LAB6:    t36 = (t0 + 7064);
+    t37 = (t36 + 56U);
+    t38 = *((char **)t37);
+    t39 = (t38 + 56U);
+    t40 = *((char **)t39);
+    memset(t40, 0, 8);
+    t41 = 1U;
+    t42 = t41;
+    t43 = (t5 + 4);
+    t44 = *((unsigned int *)t5);
+    t41 = (t41 & t44);
+    t45 = *((unsigned int *)t43);
+    t42 = (t42 & t45);
+    t46 = (t40 + 4);
+    t47 = *((unsigned int *)t40);
+    *((unsigned int *)t40) = (t47 | t41);
+    t48 = *((unsigned int *)t46);
+    *((unsigned int *)t46) = (t48 | t42);
+    xsi_driver_vfirst_trans(t36, 0, 0);
+    t49 = (t0 + 6952);
+    *((int *)t49) = 1;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(34, ng0);
-
-LAB5:    xsi_set_current_line(35, ng0);
-    t4 = (t0 + 4968);
-    xsi_set_assignedflag(t4);
-    t5 = (t0 + 10248);
-    *((int *)t5) = 1;
-    NetReassign_35_1(t0);
-    goto LAB2;
+LAB4:    t16 = *((unsigned int *)t5);
+    t17 = *((unsigned int *)t10);
+    *((unsigned int *)t5) = (t16 | t17);
+    t18 = (t3 + 4);
+    t19 = (t4 + 4);
+    t20 = *((unsigned int *)t3);
+    t21 = (~(t20));
+    t22 = *((unsigned int *)t18);
+    t23 = (~(t22));
+    t24 = *((unsigned int *)t4);
+    t25 = (~(t24));
+    t26 = *((unsigned int *)t19);
+    t27 = (~(t26));
+    t28 = (t21 & t23);
+    t29 = (t25 & t27);
+    t30 = (~(t28));
+    t31 = (~(t29));
+    t32 = *((unsigned int *)t10);
+    *((unsigned int *)t10) = (t32 & t30);
+    t33 = *((unsigned int *)t10);
+    *((unsigned int *)t10) = (t33 & t31);
+    t34 = *((unsigned int *)t5);
+    *((unsigned int *)t5) = (t34 & t30);
+    t35 = *((unsigned int *)t5);
+    *((unsigned int *)t5) = (t35 & t31);
+    goto LAB6;
 
 }
 
-static void NetReassign_35_1(char *t0)
+static void Always_124_1(char *t0)
 {
-    char t6[8];
     char *t1;
     char *t2;
-    unsigned int t3;
+    char *t3;
     char *t4;
     char *t5;
-    unsigned int t7;
-    unsigned int t8;
-    unsigned int t9;
-    char *t10;
-    char *t11;
-    unsigned int t12;
-    unsigned int t13;
-    unsigned int t14;
-    unsigned int t15;
-    unsigned int t16;
-    unsigned int t17;
-    unsigned int t18;
-    char *t19;
-    char *t20;
-    unsigned int t21;
-    unsigned int t22;
-    unsigned int t23;
-    unsigned int t24;
-    unsigned int t25;
-    unsigned int t26;
-    unsigned int t27;
-    unsigned int t28;
-    int t29;
-    int t30;
-    unsigned int t31;
-    unsigned int t32;
-    unsigned int t33;
-    unsigned int t34;
-    unsigned int t35;
-    unsigned int t36;
-    char *t37;
-    char *t38;
-    char *t39;
-    char *t40;
+    char *t6;
+    char *t7;
 
 LAB0:    t1 = (t0 + 6136U);
     t2 = *((char **)t1);
@@ -112,76 +177,23 @@ LAB0:    t1 = (t0 + 6136U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(35, ng0);
-    t3 = 0;
-    t2 = (t0 + 2648U);
-    t4 = *((char **)t2);
-    t2 = (t0 + 2968U);
-    t5 = *((char **)t2);
-    t7 = *((unsigned int *)t4);
-    t8 = *((unsigned int *)t5);
-    t9 = (t7 & t8);
-    *((unsigned int *)t6) = t9;
-    t2 = (t4 + 4);
-    t10 = (t5 + 4);
-    t11 = (t6 + 4);
-    t12 = *((unsigned int *)t2);
-    t13 = *((unsigned int *)t10);
-    t14 = (t12 | t13);
-    *((unsigned int *)t11) = t14;
-    t15 = *((unsigned int *)t11);
-    t16 = (t15 != 0);
-    if (t16 == 1)
-        goto LAB4;
+LAB2:    xsi_set_current_line(124, ng0);
+    t2 = (t0 + 6968);
+    *((int *)t2) = 1;
+    t3 = (t0 + 6168);
+    *((char **)t3) = t2;
+    *((char **)t1) = &&LAB4;
 
-LAB5:
-LAB6:    t37 = (t0 + 10248);
-    if (*((int *)t37) > 0)
-        goto LAB7;
-
-LAB8:    if (t3 > 0)
-        goto LAB9;
-
-LAB10:    t40 = (t0 + 6968);
-    *((int *)t40) = 0;
-
-LAB11:
 LAB1:    return;
-LAB4:    t17 = *((unsigned int *)t6);
-    t18 = *((unsigned int *)t11);
-    *((unsigned int *)t6) = (t17 | t18);
-    t19 = (t4 + 4);
-    t20 = (t5 + 4);
-    t21 = *((unsigned int *)t4);
-    t22 = (~(t21));
-    t23 = *((unsigned int *)t19);
-    t24 = (~(t23));
-    t25 = *((unsigned int *)t5);
-    t26 = (~(t25));
-    t27 = *((unsigned int *)t20);
-    t28 = (~(t27));
-    t29 = (t22 & t24);
-    t30 = (t26 & t28);
-    t31 = (~(t29));
-    t32 = (~(t30));
-    t33 = *((unsigned int *)t11);
-    *((unsigned int *)t11) = (t33 & t31);
-    t34 = *((unsigned int *)t11);
-    *((unsigned int *)t11) = (t34 & t32);
-    t35 = *((unsigned int *)t6);
-    *((unsigned int *)t6) = (t35 & t31);
-    t36 = *((unsigned int *)t6);
-    *((unsigned int *)t6) = (t36 & t32);
-    goto LAB6;
-
-LAB7:    t38 = (t0 + 4968);
-    xsi_vlogvar_assignassignvalue(t38, t6, 0, 0, 0, 1, ((int*)(t37)));
-    t3 = 1;
-    goto LAB8;
-
-LAB9:    t39 = (t0 + 6968);
-    *((int *)t39) = 1;
-    goto LAB11;
+LAB4:    xsi_set_current_line(125, ng0);
+    t4 = (t0 + 1368U);
+    t5 = *((char **)t4);
+    t4 = (t0 + 3128U);
+    t6 = *((char **)t4);
+    t4 = (t0 + 2648U);
+    t7 = *((char **)t4);
+    xsi_vlogfile_write(1, 0, 0, ng1, 4, t0, (char)118, t5, 32, (char)118, t6, 1, (char)118, t7, 1);
+    goto LAB2;
 
 }
 
@@ -202,8 +214,8 @@ LAB0:    t1 = (t0 + 6384U);
 
 LAB3:    goto *t2;
 
-LAB2:    t2 = ((char*)((ng1)));
-    t3 = (t0 + 7064);
+LAB2:    t2 = ((char*)((ng2)));
+    t3 = (t0 + 7128);
     t4 = (t3 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -289,7 +301,7 @@ LAB2:    t2 = (t0 + 1688U);
     t22 = (t21 & 1);
     *((unsigned int *)t13) = t22;
     xsi_vlogtype_concat(t3, 4, 4, 2U, t15, 1, t4, 3);
-    t23 = (t0 + 7128);
+    t23 = (t0 + 7192);
     t24 = (t23 + 56U);
     t25 = *((char **)t24);
     t26 = (t25 + 56U);
@@ -315,9 +327,9 @@ LAB1:    return;
 }
 
 
-extern void work_m_00000000000582607797_2979957399_init()
+extern void work_m_00000000002456758999_2979957399_init()
 {
-	static char *pe[] = {(void *)Always_34_0,(void *)NetReassign_35_1,(void *)implSig1_execute,(void *)implSig2_execute};
-	xsi_register_didat("work_m_00000000000582607797_2979957399", "isim/testbench_isim_beh.exe.sim/work/m_00000000000582607797_2979957399.didat");
+	static char *pe[] = {(void *)Cont_35_0,(void *)Always_124_1,(void *)implSig1_execute,(void *)implSig2_execute};
+	xsi_register_didat("work_m_00000000002456758999_2979957399", "isim/testbench_isim_beh.exe.sim/work/m_00000000002456758999_2979957399.didat");
 	xsi_register_executes(pe);
 }
