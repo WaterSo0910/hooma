@@ -28,6 +28,7 @@ module Simple_Single_CPU(
 	wire imm_o;
 	wire sh;
 	wire src2;
+	
 	wire cout;
 	wire over;
 	wire ALUc;
