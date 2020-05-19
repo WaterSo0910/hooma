@@ -1,0 +1,43 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/chang/Documents/Verilog/Lab4/testbench_isim_beh.exe" -prj "C:/Users/chang/Documents/Verilog/Lab4/testbench_beh.prj" "work.testbench" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Shift_Left_1.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Reg_File.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/ProgramCounter.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/MUX_3to1.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/MUX_2to1.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Instr_Memory.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Imm_Gen.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Decoder.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Data_Memory.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/ALU_Ctrl.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/alu.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Adder.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Simple_Single_CPU.v" into library work
+Analyzing Verilog file "C:/Users/chang/Documents/Verilog/Lab4/../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/testbench.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ProgramCounter
+Compiling module Instr_Memory
+Compiling module Reg_File
+Compiling module Data_Memory
+Compiling module Decoder
+Compiling module Adder
+Compiling module Imm_Gen
+Compiling module Shift_Left_1
+Compiling module MUX_2to1
+Compiling module ALU_Ctrl
+Compiling module alu
+Compiling module MUX_3to1
+Compiling module Simple_Single_CPU
+Compiling module testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系統找不到指定的路徑。, "isim\testbench_isim_beh.exe.sim\libPortability.dll".
+Compiled 15 Verilog Units
+Built simulation executable C:/Users/chang/Documents/Verilog/Lab4/testbench_isim_beh.exe
+Fuse Memory Usage: 29516 KB
+Fuse CPU Usage: 452 ms

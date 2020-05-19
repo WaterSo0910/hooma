@@ -1,0 +1,13 @@
+MO Instr_Memory NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Instr_Memory.v" vlg00/_instr___memory.bin 1589868784
+MO Simple_Single_CPU NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Simple_Single_CPU.v" vlg52/_simple___single___c_p_u.bin 1589868784
+MO Shift_Left_1 NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Shift_Left_1.v" vlg1C/_shift___left__1.bin 1589868784
+MO Decoder NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Decoder.v" vlg62/_decoder.bin 1589868784
+MO MUX_3to1 NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/MUX_3to1.v" vlg44/_m_u_x__3to1.bin 1589868784
+MO ALU_Ctrl NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/ALU_Ctrl.v" vlg52/_a_l_u___ctrl.bin 1589889129
+MO Adder NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Adder.v" vlg34/_adder.bin 1589868784
+MO Reg_File NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Reg_File.v" vlg29/_reg___file.bin 1589868784
+MO MUX_2to1 NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/MUX_2to1.v" vlg47/_m_u_x__2to1.bin 1589868784
+MO Imm_Gen NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Imm_Gen.v" vlg78/_imm___gen.bin 1589868784
+MO Data_Memory NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Data_Memory.v" vlg0A/_data___memory.bin 1589868784
+MO ProgramCounter NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/ProgramCounter.v" vlg78/_program_counter.bin 1589868784
+MO alu NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/alu.v" vlg0A/alu.bin 1589889143

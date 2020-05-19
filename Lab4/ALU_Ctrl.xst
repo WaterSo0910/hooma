@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/chang/Documents/Verilog/Lab4/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/chang/Documents/Verilog/Lab4/xst"
+elaborate
+-ifn ALU_Ctrl.prj
+-ifmt mixed
