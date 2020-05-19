@@ -33,8 +33,8 @@ always @(posedge clk_i) begin
         Reg_File[24] <= 0; Reg_File[25] <= 0; Reg_File[26] <= 0; Reg_File[27] <= 0;
         Reg_File[28] <= 0; Reg_File[29] <= 0; Reg_File[30] <= 0; Reg_File[31] <= 0;
 	end
-    else begin
-        if(RegWrite_i) 
+   else begin
+      if(RegWrite_i) 
             Reg_File[RDaddr_i] <= RDdata_i;	
 		else 
 		    Reg_File[RDaddr_i] <= Reg_File[RDaddr_i];

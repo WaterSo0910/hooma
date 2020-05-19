@@ -13,7 +13,7 @@ module ProgramCounter(
 	);
  
 always @(posedge clk_i) begin
-    if(~rst_i)
+   if(~rst_i)
 	    pc_o <= 0;
 	else
 	    pc_o <= pc_i;

@@ -13,6 +13,6 @@ module Shift_Left_1(
 /* Write your code HERE */
 
 	always@(*)begin
-		assign data_o=data_i<<1;
+		data_o=data_i<<1;
 	end
 endmodule

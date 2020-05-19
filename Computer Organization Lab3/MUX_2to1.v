@@ -23,6 +23,7 @@ module MUX_2to1(
 						data_o<=data1_i;	
 					default :
 						data_o<=data_o;
+
 				endcase
 	end					
 endmodule      
