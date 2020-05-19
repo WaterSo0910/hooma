@@ -142,7 +142,7 @@ MUX_2to1 Mux_MemtoReg(
 MUX_3to1 Mux_Jump(
 		.data0_i(pc_data0),
 		.data1_i(Imm),
-		.data2_i(Imm_Gen_o),
+		.data2_i(RSdata_o),
 		.select_i(Jump),
 		.data_o(pc_i)
 		);		
