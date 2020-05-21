@@ -15,7 +15,7 @@ module ALU_Ctrl(
 
 	always@(*)begin
 		case(ALUOp)
-			2'b00://S_type 
+			2'b00://S_type
 				ALU_Ctrl_o=4'b0010;
 			2'b01://B_type
 				case(instr[2:0])
@@ -27,8 +27,6 @@ module ALU_Ctrl(
 						ALU_Ctrl_o=4'b1001;//blt
 					3'b101:
 						ALU_Ctrl_o=4'b0101;//bge
-					3'b010:
-						ALU_Ctrl_o=4'b0010;//ld	
 				endcase						
 			2'b10://R_type
 				case(instr)
@@ -52,7 +50,7 @@ module ALU_Ctrl(
 						ALU_Ctrl_o=4'b0000;
 				endcase
 			2'b11://I_type
-				case(instr[2:0])
+				case(instr[3:0])
 					3'b000://addi jalr
 						ALU_Ctrl_o=4'b0010;
 					3'b010://slti

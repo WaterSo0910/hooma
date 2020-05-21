@@ -1,6 +1,6 @@
 /***************************************************
-Student Name: Yu_Ho_Chang
-Student ID: 0716046 
+Student Name: 
+Student ID: 
 ***************************************************/
 
 `timescale 1ns / 1ps

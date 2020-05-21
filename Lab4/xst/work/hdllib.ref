@@ -1,7 +1,7 @@
 MO Instr_Memory NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Instr_Memory.v" vlg00/_instr___memory.bin 1589868784
 MO Simple_Single_CPU NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Simple_Single_CPU.v" vlg52/_simple___single___c_p_u.bin 1589868784
 MO Shift_Left_1 NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Shift_Left_1.v" vlg1C/_shift___left__1.bin 1589868784
-MO Decoder NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Decoder.v" vlg62/_decoder.bin 1589868784
+MO Decoder NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Decoder.v" vlg62/_decoder.bin 1589894472
 MO MUX_3to1 NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/MUX_3to1.v" vlg44/_m_u_x__3to1.bin 1589868784
 MO ALU_Ctrl NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/ALU_Ctrl.v" vlg52/_a_l_u___ctrl.bin 1589889129
 MO Adder NULL "../../NCTU/2_spring/Conputer Organization/Computer Organization Lab4/Adder.v" vlg34/_adder.bin 1589868784
