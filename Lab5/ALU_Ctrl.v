@@ -50,7 +50,7 @@ module ALU_Ctrl(
 						ALU_Ctrl_o=4'b0000;
 				endcase
 			2'b11://I_type
-				case(instr[3:0])
+				case(instr[2:0])
 					3'b000://addi jalr
 						ALU_Ctrl_o=4'b0010;
 					3'b010://slti

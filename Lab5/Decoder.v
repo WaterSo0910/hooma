@@ -12,9 +12,7 @@ module Decoder(
 	output          RegWrite,
 	output          MemRead,
 	output          MemWrite,
-	output          Branch,
-	output [1:0]	ALUOp,
-	output [1:0]	Jump
+	output [1:0]	ALUOp
 	);
 
 /* Write your code HERE */
@@ -53,12 +51,10 @@ assign Ctrl_o = (Instr_field==0 && opcode[5]==0)?10'b0110100010:( //JAL
 				
 assign ALUSrc 	= Ctrl_o[7];
 assign RegWrite = Ctrl_o[5];
-assign Branch	= Ctrl_o[2];
 assign ALUOp 	= {Ctrl_o[1:0]};
 assign MemWrite = Ctrl_o[3];
 assign MemRead  = Ctrl_o[4];
 assign MemtoReg = Ctrl_o[6];
-assign Jump = Ctrl_o[9:8];
 endmodule
 
 
